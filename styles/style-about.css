@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'LogoFont';
+    src: url("../assets/fonts/single-fighter/SINGLE\ FIGHTER.otf");
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../assets/fonts/nexa/Nexa-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../assets/fonts/nexa/Nexa-Heavy.ttf");
+}
+
+@font-face {
+    font-family:'Social';
+    src: url("../assets/fonts/socialicons/social.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: NexaLight ;
+    background-color: rgb(20, 20, 20);
+
+    color: white;
+}
+
+#mysteryLogo{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+#selected{
+    background-color: rgb(70, 70, 70);
+}
+
+
+.zonaTitulo{
+    position: relative;
+}
+
+
+
+.zonaTitulo .tituloText{
+    z-index: 1;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    position: relative;
+}
+
+.tituloText img{
+    text-align: center;
+    margin-top: 5%;
+    height: 40%;
+    width: 40%;
+}
+
+
+.zonaTitulo video{
+    background-color: black;
+    z-index: 0;
+    filter: opacity(20%);
+    filter: blur(30px);
+    position: absolute;
+    object-fit: cover;
+    text-align: center;
+}
+
+footer{
+    margin-top: 15%;
+    text-align: center;
+    background-color: rgb(42, 42, 42);
+    padding: 30px;
+    color: white;
+}
+
+
+.infoText h1{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0px 0px 10px white;
+    animation: neon 5s infinite;
+}
+
+.infoText{
+    margin: 30px;
+    margin-left: 5%;
+    margin-right: 30%;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 5px 5px 0px gray;
+    text-align: center;
+}
+
+aside {
+    width: 20%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 200px;
+    margin-left: 4%;
+    margin-right: 30px;
+    float: right;
+    background-color: rgb(63, 63, 63);
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 0px gray;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+.icons{
+    font-family: social;
+    position:sticky;
+    text-decoration: none;
+    text-align: center;
+}
+.icons2:hover,.icons3:hover,.icons4:hover{
+    position: relative;
+    opacity: 100%;
+}
+.icons2,.icons3,.icons4{
+    font-size: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    position: relative;
+    opacity: 50%;
+    transition: cubic-bezier();
+    transition-duration: 0.4s;
+}
+
+
+footer img{
+    width: 5%;
+    height: 5%;
+}
+
+.barra{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+}
+
+
+.barra a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.first{
+    margin-left: 4%;
+}
+
+
+
+.barra a:hover, #selected:hover{
+    font-family: NexaBold;
+    background-color: white;
+    color: black;
+}
+
+#selected{
+    background-color: rgb(70, 70, 70);
+}
+
+.logo{
+
+    /*padding-top: 2px;  Cambiar imagen del logo a blanco */
+   /*  padding-right: 47px; Cambiar a porcentaje */
+    /*padding-left: 50px;  Cambiar a porcentaje */
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    transform:translate(-40px,-10px);
+    float: left;
+    position: absolute;
+
+}
+
+/*
+
+    LOADING CSS 
+
+*/
+
+#black {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+#load {
+
+    position:absolute;
+    width:600px;
+    height:36px;
+    left:50%;
+    top:40%;
+    margin-left:-300px;
+    overflow:visible;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor:default;
+}
+  
+#load div {
+    position:absolute;
+    width:20px;
+    height:36px;
+    opacity:0;
+    font-family:Helvetica, Arial, sans-serif;
+    animation:move 2s linear infinite;
+    -o-animation:move 2s linear infinite;
+    -moz-animation:move 2s linear infinite;
+    -webkit-animation:move 2s linear infinite;
+    transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    color:#35C4F0;
+    text-shadow: 0px 0px 5px rgb(0, 153, 255);
+}
+  
+  #load div:nth-child(2) {
+    animation-delay:0.2s;
+    -o-animation-delay:0.2s;
+    -moz-animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+}
+  #load div:nth-child(3) {
+    animation-delay:0.4s;
+    -o-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+    -webkit-animation-delay:0.4s;
+}
+  #load div:nth-child(4) {
+    animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+}
+  #load div:nth-child(5) {
+    animation-delay:0.8s;
+    -o-animation-delay:0.8s;
+    -moz-animation-delay:0.8s;
+    -webkit-animation-delay:0.8s;
+}
+  #load div:nth-child(6) {
+    animation-delay:1s;
+    -o-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -webkit-animation-delay:1s;
+}
+  #load div:nth-child(7) {
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+}
+
+  
+@keyframes move {
+    0% {
+      left:0;
+      opacity:0;
+    }
+    35% {
+      left: 41%; 
+      -moz-transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      -webkit-transform:rotate(0deg); 
+      -o-transform:rotate(0deg);
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      -webkit-transform:rotate(-180deg); 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+}
+  
+@-moz-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -moz-transform:rotate(0deg); 
+      transform:rotate(0deg);
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -moz-transform:rotate(-180deg); 
+      transform:rotate(-180deg);
+      opacity:0;
+    }
+}
+  
+@-webkit-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -webkit-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%;
+      -webkit-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+}
+  
+@-o-keyframes move {
+    0% {
+      left:0; 
+      opacity:0;
+    }
+    35% {
+      left:41%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    65% {
+      left:59%; 
+      -o-transform:rotate(0deg); 
+      transform:rotate(0deg); 
+      opacity:1;
+    }
+    100% {
+      left:100%; 
+      -o-transform:rotate(-180deg); 
+      transform:rotate(-180deg); 
+      opacity:0;
+    }
+}
+
+@keyframes neon {
+  from, to { text-shadow: 0px 0px 10px white; }
+  25% { text-shadow: 0px 0px 15px white; }
+  50% { text-shadow: 0px 0px 5px white; }
+  75% { text-shadow: 0px 0px 20px white; }
+}
