@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'LogoFont';
+    src: url("../assets/fonts/single-fighter/SINGLE\ FIGHTER.otf");
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../assets/fonts/nexa/Nexa-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../assets/fonts/nexa/Nexa-Heavy.ttf");
+}
+
+body{
+    margin: 0;
+    font-family: NexaLight ;
+    
+}
+
+#main{
+    text-align: center;
+}
+
+#text-before{
+    margin-bottom: 40px;
+}
+
+#boton{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    text-decoration: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.3s;
+}
+
+#boton:hover{
+    padding: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 139, 46);
+    background-color: rgb(0, 139, 46);
+    border-radius: 20px;
+
+}
+

@@ -6,6 +6,8 @@
     <title>ACV | ABOUT</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ICON.ico">
     <link rel="stylesheet" href="styles/style-about.css">
+    <link rel="stylesheet" href="styles/style-topbar.css">
+    <link rel="stylesheet" href="styles/style-footer.css">
     
 </head>
 
@@ -19,8 +21,16 @@
             <ul>
                 <img src="assets/images/logo.png" alt="" width="6%" height="6%" class="logo">
                 <a class="first" href="index.html">Inicio</a>
-                <a id="selected" href="yo.html">Sobre mí</a>
-                <a href="calendario.html">Calendario Escolar</a>
+                <a href="yo.html" id="selected-category" >Sobre mí</a>
+                <div class="dropdown">
+                    <a class="dropbtn"> Aplicaciones &#9662;
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="https://a-ce-v.github.io/calendar.github.io/index.html">ACV Calendar Website</a>
+                        <a >PCS (Próximamente)</a>
+                    </div>
+                </div>
+            
             </ul>
         </div>
     </header>
@@ -35,7 +45,7 @@
     </aside>
 
     <div class="infoText">
-        <img id="mysteryLogo" src="assets/images/images.jpeg" alt="">
+        <img id="mysteryLogo" src="assets/images/me.png" alt="">
         <div><h1>Sobre mí:</h1> <hr><p>Me llamo, Adrián Castillo Vega, nací el 26 de Agosto de 2005 en Málaga, España, y soy Técnico en el desarrollo de aplicaciones Multiplataformas. Pertenezco a la categoría: "Junior" debido a mi falta de experiencia en el sector. No obstante, poseo una gran capacidad de adaptación, además de creatividad.</p> <p>Llevo en el sector de la informática desde chico, empecé por los videojuegos, luego me interesé en Hardware, experimenté mucho por mi cuenta con el FrontEnd, y actualmente me estoy acostumbrado, formando e informando del BackEnd.</p> <p>Poseo los conocimientos necesarios para llevar a cabo multitud de tareas del ámbito informático, desde la creación de páginas web de complejidad media, creación de servicios como SSH, Apache, Webmin, etc. El manejo de  máquinas virtuales, instalación de sistemas operativos, y el uso de sistemas operativos LIVE, conocimientos medios de hardware, y la creación de aplicaciones multiplataforma.</p><p>En cuanto a los lenguajes de programación con los que he trabajando alguna vez, podemos encontrar; Java, HTML, CSS, JS, MySQL, GIT, BASH, KOTLIN, JSON, XML y CSV.</p><p> <b>Información actualizada por útima vez el 23/10/2024</b></p></div>
     </div>
 
@@ -45,8 +55,52 @@
 
 
     <footer>
-        <p><b>Hecho por: </b>Adrián Castillo Vega 2024&copy;</p>
-        <p>Con la tecnología de: </p><img src="assets/images/amazon-web-services.png" alt="">
+        <div id="first-part">
+            <table id="main-table">
+                <tr>
+                    <td id="primera-columna">
+                        <p><b>Hecho por: </b><a target="_blank" href="https://a-ce-v.github.io/acv.github.io/index.html">Adrián Castillo Vega 2024 - 2025</a> </p>
+                        Una aplicación de <a target="_blank" href="https://a-ce-v.github.io/acv.github.io/index.html">ACV</a> - Todos los derechos reservados 
+                        <p >Versión: <b id="version-text"></b></p>
+                    </td>
+                    <td id="segunda-columna">
+                        <p>Con la tecnología de: </p> <a target="_blank" href="https://docs.github.com/es/pages/getting-started-with-github-pages/creating-a-github-pages-site"><img src="assets/images/github_logo.png" alt=""></a>
+                    </td>
+                    <td id="tercera-columna"> 
+                        <div id="tercer-apartado">
+                            <h1>¿ Quieres más ?</h1>
+                            <table id="second-table">
+                                
+                                <tr>
+                                    <td><a id="primerEnlace" href="">Web oficial ACV</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="segundoEnlace" href="">Sobre mí</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="tercerEnlace" href="">Acerca de uso</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="cuartoEnlace" href="">Funcionamiento web</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="quintoEnlace" href="">Licencias Creative Commons</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="sextoEnlace" href="">Tecnología Github Pages</a></td>
+                                </tr>
+                            </table>
+                        </div>                                   
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="second-part">
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">ACV WEBSITE</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://a-ce-v.github.io/acv.github.io/index.html">Adrián Castillo Vega</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+        </div>
+
     </footer>
+    <script src="Scripts/footer-scripts.js"></script>
 </body>
 </html>
